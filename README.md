@@ -84,6 +84,13 @@ python lrzAIdemo/demo_py.py
 - `--time=2-00:00:00`: Sets the maximum runtime to 2 days. There's no harm in requesting the full 2-day limit.
 - `--job-name=demo_job`: Assigns a name to your job for easier tracking.
 - `--output` and `--error`: Define separate log files for standard output and errors. Change these paths if you didn't clone the repository.
+- `--mail-user=<YOUR-EMAIL@EXAMPLE.COM>`: Specifies an email address to receive notifications (optional).
+- `--mail-type=BEGIN,END,FAIL`: Specifies the types of events for which email notifications are sent (optional).
+    - `BEGIN`: email when the job begins.
+    - `END`: email when the job finishes successfully.
+    - `FAIL`: email if the job fails.
+    - `ALL`: email on all job state changes.
+    - `TIME_LIMIT`: email when the job exceeds time limit.
 
 ### Submitting the job
 
